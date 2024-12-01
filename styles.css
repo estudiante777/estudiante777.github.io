@@ -1,0 +1,295 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #ffffff;
+    text-align: center; /* Centra todo el texto */
+}
+
+header {
+    background: image-set("rio-lerma-logo.png");
+    padding: 4rem 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 4px 10px 20px rgb(0, 0, 0);
+}
+
+
+/* Estilos del menú */
+.menu {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
+  }
+  
+  /* Estilos de la lista */
+  .menu ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre elementos */
+  }
+  
+  /* Estilos de los enlaces */
+  .menu ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #000; /* Color del texto */
+    background-color: #f0f0f0; /* Fondo de cada cajita */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Suaviza la transición */
+  }
+  
+  /* Efecto hover */
+  .menu ul li a:hover {
+    background-color: #0078d4; /* Color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Aumenta la sombra */
+  }
+
+
+header h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 2rem;
+    background: #ffffff;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    color: #252525;
+}
+
+.section h2 {
+    color: #1976d2;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.referencias { 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    background: #ffffff;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.titulo {
+   
+
+}
+
+/* Estilo para el botón "Volver al Inicio" */
+#volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+#volver-arriba:hover {
+    background: #555;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+    table th, table td {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    nav a {
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+    section {
+        margin: 5px;
+        padding: 10px;
+    }
+    table th, table td {
+        font-size: 0.8rem;
+        padding: 4px;
+    }
+    #volver-arriba {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+}
+
+
+/* Estilo del contenedor del video */
+.video-container {
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animación de agradecimiento */
+.mensaje-gracias p {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+    animation: slideIn 2s ease-in-out;
+}
+
+/* Estilo del botón "Ir al video" */
+#ver-video {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Hover y efecto del botón */
+#ver-video:hover {
+    background-color: #d16ba5;
+    transform: scale(1.05);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Contenedor de la Intro */
+#intro-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #39463a9c; /* Fondo degradado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Para que esté por encima de todo */
+    animation: fadeOut 2s 2.6s forwards; /* Desvanece la intro después de 4s */
+}
+
+/* Estilo del Logo en la Intro */
+.intro-logo img {
+    width: 750px;
+    height: auto;
+    animation: zoomIn 1s ease-in-out; /* Efecto de zoom */
+}
+
+/* Animaciones */
+@keyframes zoomIn {
+    from {
+        transform: scale(3);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(3);
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1);
+        opacity: 0;
+    }
+}
